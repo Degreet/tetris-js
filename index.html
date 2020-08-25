@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетрис на JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tetrisScript.js">
+    </script>
+    
+</head>
+<body onload="Init(); AddkeyEvent();setTimeout(() => loader.classList.add('loaded'), 1000);	setInterval(tick, game.tick);">
+    <div id="loader">
+        <img src="img/logo.jpg">
+        <span class="score">Очки: <span id="scoreCountSpan">0</span></span>
+    </div>
+
+    <canvas id="canv" width="360" height="530"></canvas>
+    <script src="js/script.js"></script>
+</body>
+</html>
